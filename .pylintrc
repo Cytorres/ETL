@@ -6,6 +6,8 @@ disable=C0114,  # missing-module-docstring
         R1716,  # Simplify chained comparison between the operands (chained-comparison)
         E0401,  # Unable to import 
         C0325,  # Unnecessary parens after 'if' keyword (superfluous-parens)
+        E0015,  #unrecognized-option
+        
 
 # Analyse import fallback blocks. This can be used to support both Python 2 and
 # 3 compatible code, which means that the block might have code that exists
