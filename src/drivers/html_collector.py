@@ -1,9 +1,12 @@
+# pylint: disable=W0221:arguments-differ
 from typing import Dict, List
 
 from bs4 import BeautifulSoup
 
+from .interfaces.html_collector import HtmlCollectorInterface
 
-class HtmlCollector:
+
+class HtmlCollector(HtmlCollectorInterface):
     @classmethod
     def collect_essential_information(cls, html: str) -> List[Dict[str,str]]:
         soup = BeautifulSoup(html, 'html.parser')

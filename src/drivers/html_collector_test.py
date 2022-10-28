@@ -1,5 +1,5 @@
 from .html_collector import HtmlCollector
-from .http_requester_mock import mock_request_from_page
+from .mocks.http_requester_mock import mock_request_from_page
 
 
 def test_collect_essential_information():
